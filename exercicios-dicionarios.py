@@ -72,7 +72,7 @@ for key in carros.keys():
     carros[key].pop(indice)
 print(carros)
 
-7-'''
+7-
 frase = 'O bispo de Constantinopla é um bom desconstantinopolitanizador. Quem o desconstantinopolitanizar, um bom desconstantinopolitanizador será.'
 frase.lower()
 for char in '.,':
@@ -85,6 +85,20 @@ for palavra in palavras:
     else:
         contador[palavra] += 1
 print(contador)
+
+8-'''
+numeros = {
+    'cinco': '5',
+    'zero': '0',
+    'dois': '2'
+}
+
+frase = 'Eu tenho aula na sala cinco zero dois'
+for key in numeros.keys():
+    frase = frase.replace(key+' ', numeros[key])
+    frase = frase.replace(key, numeros[key])
+print(frase)
+
 
 
 
